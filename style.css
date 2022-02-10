@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@700&family=Quicksand:wght@700&family=Work+Sans:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.animation-part {
+    width: 17ch;
+    animation: typing 2s steps(25), blink .8s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 10px solid;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #FAF9F6;
+    color: #161616;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.common-button {
+    outline: 0;
+    border: 0;
+    padding: 10px 35px;
+    background-color: #E02C6D;
+    color: white;
+    font-size: 12px;
+    border-radius: 0;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    font-size: 15px;
+}
+
+#nav-toggler {
+    display: none;
+}
+
+.nav-toggler-icon {
+    display: none;
+    color: black;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.logo h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navigation-section {
+    display: flex;
+}
+
+.navigation-section li {
+    list-style: none;
+    margin: 10px;
+}
+
+.navigation-section li a {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-weight: 600;
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+.first-button {
+    outline: 0;
+    border: 0;
+    padding: 10px 35px;
+    background-color: #E02C6D;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    font-size: 15px;
+    transition: 0.8s;
+}
+
+.banner-section {
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    margin: 30px;
+}
+
+.banner-left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner-left-section {
+    order: 2;
+    padding: 50px 0;
+}
+
+.banner-left-section h2 {
+    font-weight: 700;
+    font-size: 27px;
+}
+
+.banner-left-section p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.banner-right-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.banner-right-section img {
+    width: 100%;
+}
+
+.middle-logos {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    padding: 20px;
+}
+
+.middle-title {
+    text-align: center;
+    margin: 50px;
+}
+
+.products-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.product-details {
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+    box-shadow: lightcyan;
+    line-height: 2;
+}
+
+.star {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: goldenrod;
+}
+
+.button-color {
+    color: #E02C6D;
+}
+
+.second-button {
+    text-align: right;
+    margin: 20px;
+}
+
+.second-button a {
+    text-decoration: none;
+}
+
+.footer {
+    height: 200px;
+    background-color: #0A0826;
+    color: white;
+}
+
+.footer-items {
+    text-align: center;
+    padding: 20px;
+    line-height: 2;
+}
+
+.social-icon {
+    font-size: 25px;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(57, 57, 99);
+    border-radius: 50px;
+}
